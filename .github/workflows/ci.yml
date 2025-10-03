@@ -10,9 +10,10 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      #- name: Run commands on server
-      #  run: |
-      #    ssh -o StricHostKeyChecking=no -i /home/opstree/Downloads/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
+      - name: Run commands on server
+        run: |
+          ssh -o StricHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
+          touch new_file.txt
       #    cd /home/ubuntu/demorepo/demorepo/
       #    npm install
       #    nohup npm run start -- -p 3002 > remlfota.log 2>&1 &
