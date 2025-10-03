@@ -16,10 +16,10 @@ jobs:
 
       - name: SSH into server and deploy
         run: |
-            ssh -o StrictHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
             cd /home/ubuntu
             git clone https://github.com/MohdFaisalAliKhan/my_node_app.git
-            cd demorepo/demorepo/
+            cd my_node_app
             npm install
             nohup npm run start -- -p 3002 > remlfota.log 2>&1 </dev/null &
             disown
