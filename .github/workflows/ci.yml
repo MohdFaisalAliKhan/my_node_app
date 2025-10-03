@@ -1,0 +1,19 @@
+name: Node
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  remote-ssh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Run commands on server
+        run: |
+          ssh -o StricHostKeyChecking=no -i /home/opstree/Downloads/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
+          cd /home/ubuntu/demorepo/demorepo/
+          npm install
+          nohup npm run start -- -p 3002 > remlfota.log 2>&1 &
+
