@@ -1,0 +1,106 @@
+nohup: ignoring input
+/var/www/zip/demorepo/demorepo/server.js:1
+const fileInput = document.getElementById('apkFile');
+                  ^
+
+ReferenceError: document is not defined
+    at Object.<anonymous> (/var/www/zip/demorepo/demorepo/server.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+
+Node.js v17.9.0
+nohup: ignoring input
+/var/www/zip/demorepo/demorepo/server.js:1
+const fileInput = document.getElementById('apkFile');
+                  ^
+
+ReferenceError: document is not defined
+    at Object.<anonymous> (/var/www/zip/demorepo/demorepo/server.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1099:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+
+Node.js v17.9.0
+nohup: ignoring input
+Server listening at http://localhost:3000
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507231133.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/zeroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/zeroqa/UnoMindaCluster.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/zeroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/zeroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507240508_maba.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507240551.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507240606.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/zeroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/zeroqa/UnoMindaCluster.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507250551_maba.apk
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507250555.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507250703.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507250912.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507251015.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/zeroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/zeroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202507252100_maba.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508050945.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051018.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051033.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051109.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051151.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051203.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051224.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051257.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051306.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051448.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508051454.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508111433.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508111518.apk
+File uploaded to /var/www/zip/sbdt-uploaded-files/heroqa
+Deleted: /var/www/zip/sbdt-uploaded-files/heroqa/UnoMindaCluster.apk
+File uploaded successfully to /var/www/zip/demorepo/demorepo/output_files as UnoMindaCluster202508111527.apk

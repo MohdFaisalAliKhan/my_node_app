@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK Uploader</title>
+    <style>
+       body {
+
+       /* Keyframes for fade-in and scale-up animation */
+       @keyframes fadeInScaleUp {
+           0% { opacity: 0; transform: scale(0.95); }
+           100% { opacity: 1; transform: scale(1); }
+       }
+
+
+
+ padding-top: 50px; /* Added padding to prevent content from being hidden by a potential fixed header */
+ font-family: 'Arial', sans-serif; /* Changed font for a more common professional look */
+ background-color: #eef2f7; /* Lighter, more modern background color */
+ display: flex;
+ flex-direction: column; /* Stack elements vertically */
+ justify-content: flex-start; /* Align items from the top */
+ align-items: center;
+ min-height: 100vh;
+ margin: 0;
+ color: #333; /* Darker text color for better readability */
+       }
+
+       .container {
+ background-color: #ffffff; /* Pure white background for the container */
+ padding: 40px; /* Increased padding */
+ border-radius: 12px; /* More rounded corners */
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer and larger shadow */
+ width: 90%; /* Increased width */
+ max-width: 550px; /* Slightly increased max-width */
+ text-align: center;
+ margin-bottom: 30px; /* Added margin at the bottom */
+ animation: fadeInScaleUp 0.5s ease-out forwards; /* Apply animation */
+
+       }
+
+       h1 {
+ color: #1a237e; /* Deep blue color for the heading */
+ margin-bottom: 30px; /* Increased bottom margin */
+ font-size: 2em; /* Larger heading font size */
+ font-weight: 600; /* Semi-bold font weight */
+       }
+
+       .upload-section {
+ border: 3px dashed #a0c3ff; /* Thicker dashed border with a lighter blue */
+ padding: 40px; /* Increased padding */
+ border-radius: 8px; /* Slightly more rounded border */
+ cursor: pointer;
+ margin-bottom: 30px; /* Increased bottom margin */
+ transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Smooth transition */
+ background-color: #e3f2fd; /* Very light blue background */
+       }
+
+       .upload-section:hover {
+ border-color: #1565c0; /* Darker blue on hover */
+ background-color: #bbdefb; /* Lighter blue background on hover */
+       }
+
+       input[type="file"] {
+ display: none;
+       }
+
+       label {
+ display: block;
+ font-size: 1.2em; /* Larger label font size */
+ color: #3f51b5; /* Medium blue color for the label */
+ cursor: pointer;
+ font-weight: 500; /* Medium font weight */
+       }
+
+       .file-info {
+ margin-top: 25px; /* Increased top margin */
+ text-align: left;
+ border-top: 1px solid #e0e0e0; /* Lighter border color */
+ padding-top: 20px; /* Increased top padding */
+       }
+
+       .file-info h2 {
+ font-size: 1.3em; /* Larger heading for file info */
+ color: #1a237e; /* Consistent heading color */
+ margin-bottom: 15px; /* Added bottom margin */
+       }
+
+       .file-info p {
+ margin: 8px 0; /* Increased vertical margin */
+ color: #555; /* Slightly darker text color */
+ font-size: 1em; /* Standard font size */
+       }
+
+       .file-info strong {
+ color: #333; /* Darker color for strong text */
+ font-weight: 600; /* Semi-bold */
+       }
+
+       button {
+ background-color: #4caf50; /* Green button color */
+ color: white;
+ padding: 14px 30px; /* Increased padding */
+ border: none;
+ border-radius: 6px; /* Slightly more rounded button */
+ cursor: pointer;
+ font-size: 1.1em; /* Larger button font size */
+ transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out; /* Smooth transition and slight press effect */
+ margin-top: 25px; /* Increased top margin */ /* Added subtle button shadow */
+ font-weight: 500; /* Medium font weight */
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added subtle button shadow */
+       }
+
+       button:hover {
+ background-color: #388e3c; /* Darker green on hover */
+       }
+
+       button:active {
+ transform: scale(0.96); /* Slightly shrink button on click */
+       }
+
+       button:disabled {
+ cursor: not-allowed;
+ opacity: 0.6;
+       }
+
+       #uploadAgainButton {
+ background-color: #ff9800; /* Orange for upload again */
+ margin-right: 15px; /* Space between buttons */
+       }
+
+       #uploadAgainButton:hover {
+ background-color: #f57c00; /* Darker orange on hover */
+       }
+
+       #performBuildButton {
+ background-color: #2196f3; /* Blue for perform build */
+       }
+
+       #performBuildButton:hover {
+ background-color: #1976d2; /* Darker blue on hover */
+       }
+
+       .progress-container {
+ width: 100%;
+ background-color: #e0e0e0; /* Lighter background for progress container */
+ border-radius: 5px;
+ margin-top: 25px; /* Increased top margin */
+ overflow: hidden;
+ height: 12px; /* Slightly taller progress bar */
+ display: none; /* Hidden by default */
+       }
+
+       .progress-bar {
+ width: 0%;
+ height: 100%;
+ background-color: #4caf50; /* Green progress bar color */
+ transition: width 0.4s ease-in-out; /* Smooth progress transition */
+       }
+
+       .message {
+ margin-top: 20px;
+ font-size: 1.1em;
+ font-weight: 500;
+ }
+
+       .success-message {
+ color: #4caf50; /* Green for success messages */
+       }
+
+       .error-message {
+ color: #f44336; /* Red for error messages */
+       }
+
+       /* Loader styles */
+       .loader {
+           border: 4px solid #f3f3f3; /* Light grey */
+           border-top: 4px solid #3498db; /* Blue */
+           border-radius: 50%;
+           width: 20px;
+           height: 20px;
+           animation: spin 1s linear infinite;
+           display: none; /* Hidden by default */
+           margin: 20px auto; /* Center the loader below other elements */
+       }
+
+       @keyframes spin {
+           0% { transform: rotate(0deg); }
+           100% { transform: rotate(360deg); }
+       }
+
+    </style>
+</head>
+<body>
+    <img src="images/logo_um.png" alt="Uno Minda Logo" style="display: block; margin: 0 auto 20px auto; max-width: 200px;">
+
+    <div class="container">
+        <h1>Upload APK File</h1>
+
+        <div class="upload-section" id="uploadSection">
+            <input type="file" id="apkFile" accept=".apk">
+            <label for="apkFile">Drag and drop your APK here or click to select</label>
+        </div>
+
+        <div class="file-info" id="fileInfo" style="display: none;">
+            <h2>Selected File:</h2>
+            <p><strong>Name:</strong> <span id="fileName"></span></p>
+            <p><strong>Size:</strong> <span id="fileSize"></span></p>
+        </div>
+
+        <button id="uploadButton" style="display: none;">Upload File</button>
+
+        <div class="progress-container" id="progressBarContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+ <div class="loader" id="buildLoader"></div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
