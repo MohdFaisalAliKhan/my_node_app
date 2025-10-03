@@ -19,12 +19,10 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
             cd /home/ubuntu
             git clone https://github.com/MohdFaisalAliKhan/my_node_app.git
-            source ~/.bashrc
-            source ~/.profile
             cd my_node_app
             pwd
-            npm -v
-            npm install
-            nohup npm run start -- -p 3002 > remlfota.log 2>&1 </dev/null &
+            /home/ubuntu/.nvm/versions/node/v16.20.2/bin/npm -v
+            /home/ubuntu/.nvm/versions/node/v16.20.2/bin/npm install
+            nohup /home/ubuntu/.nvm/versions/node/v16.20.2/bin/npm run start -- -p 3002 > remlfota.log 2>&1 </dev/null &
             disown
           EOF
