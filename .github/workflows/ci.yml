@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Run commands on server
         run: |
-          ssh -o StricHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
+          ssh -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
           touch new_file.txt
       #    cd /home/ubuntu/demorepo/demorepo/
       #    npm install
