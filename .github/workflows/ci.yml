@@ -25,7 +25,7 @@ jobs:
             fi
 
             cd my_node_app
-
+            export PATH=$HOME/.nvm/versions/node/v16.20.2/bin:$PATH
             # Debug path
             pwd
             /home/ubuntu/.nvm/versions/node/v16.20.2/bin/npm -v
