@@ -8,9 +8,15 @@ jobs:
   remote-ssh:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo (to get the PEM file from repo)
+        uses: actions/checkout@v3
+
+      - name: Fix key permissions
+        run: chmod 600 keys/jen_aws.pem
+
       - name: SSH into server and deploy
         run: |
-          ssh -o StrictHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
+            ssh -o StrictHostKeyChecking=no -i keys/jen_aws.pem ubuntu@54.167.75.247 << 'EOF'
             cd /home/ubuntu
             git clone https://github.com/MohdFaisalAliKhan/my_node_app.git
             cd demorepo/demorepo/
